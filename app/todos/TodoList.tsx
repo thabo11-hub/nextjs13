@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { Todo } from '../../typings';
 
 const fetchTodos = async () => {
     const res = await fetch("https://jsonplaceholder.typicode.com/todos")
-    const todos = await res.json();
+    const todos: Todo[] = await res.json();
 }
 
 async function TodoList() {
