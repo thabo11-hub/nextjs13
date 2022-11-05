@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
     return (
         <html>
-            <head></head>
+            <head>Basic Todo</head>
             <body>
                 <Header />
                 {children}</body>
