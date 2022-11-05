@@ -21,10 +21,10 @@ async function TodoPage({ params: { todoId } }: PageProps) {
                 #{todo.id}: {todo.title}
             </p>
             <p>Completed: {todo.completed ? "Yes" : "No"}</p>
-        <p className='border-t border-black mt-5 text-right'>
-            By User: {todo.userId}
-        </p>
-    </div>
+            <p className='border-t border-black mt-5 text-right'>
+                By User: {todo.userId}
+            </p>
+        </div>
     )
 }
 
