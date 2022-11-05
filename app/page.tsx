@@ -4,7 +4,7 @@ import TodoList from './todos/TodoList'
 function Home() {
   return (
     <>
-      <Suspense fallback={<p>Loading Todos.....</p>}>
+      <Suspense fallback={<p className='text-lime-500'>Loading Todos.....</p>}>
         <h1>Loading Todos</h1>
         <div className='flex space-x-2'>
           {/*@ts-ignore*/}
@@ -12,7 +12,10 @@ function Home() {
         </div>
       </Suspense>
 
-      <Suspense fallback={<p>Loading Shopping Trolley.....</p>}>
+      <Suspense
+        fallback={
+          <p className='text-blue-500'>Loading Shopping Trolley.....</p>
+        }>
 
         <h1>Loading Shopping Trolley</h1>
         <div className='flex space-x-2'>
