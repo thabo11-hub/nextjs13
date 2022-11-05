@@ -1,9 +1,13 @@
 import React from 'react'
 
 function Header() {
-  return (
-    <div className='p-5 bg-blue-400'>Header</div>
-  )
+    return (
+        <header className='p-5 bg-blue-400'>
+            <p>
+                Header
+            </p>
+        </header>
+    )
 }
 
 export default Header
