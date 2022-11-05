@@ -32,7 +32,7 @@ async function SearchResult({ params: { searchTerm } }: PageProps) {
             <p className='text-gray-500 text-sm'>You search for: {searchTerm}</p>
 
             <ol className='space-y-5 p-5'>
-                {searchResults.orgarnic_results.map((result) => (
+                {searchResults.orgarnic_results?.map((result) => (
                     <li key={result.position} className='list-decimal'>
                         <p className='font-bold'>{result.title}</p>
                         <p>{result.snippet}</p>
