@@ -1,7 +1,7 @@
 import React from 'react'
 
 const fetchTodos = async () => {
-    
+    const res = await fetch("https://jsonplaceholder.typicode.com/todos")
 }
 
 async function TodoList() {
