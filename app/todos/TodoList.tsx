@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { Todo } from '../../typings';
 
@@ -11,9 +12,17 @@ async function TodoList() {
 
     const todos = await fetchTodos()
 
-  return (
-    <div>TodoList</div>
-  )
+    return (
+        <>
+            {todos.map((todo) => (
+                <p key={todo.id}>
+                    <Link href={`/todos/${todo.id}`}>Todo: {todo.id}</Link>
+                </p>
+            ))
+
+            }
+        </>
+    )
 }
 
 export default TodoList
