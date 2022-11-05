@@ -1,6 +1,9 @@
 import React from 'react'
 
-function TodoList() {
+async function TodoList() {
+
+    const todos = await fetchTodos()
+
   return (
     <div>TodoList</div>
   )
