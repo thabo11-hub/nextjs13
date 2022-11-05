@@ -1,6 +1,8 @@
 import React from 'react';
 import { Todo } from '../../../typings';
 
+export const dynamicParams =true;
+
 type PageProps = {
     params: {
         todoId: string;
