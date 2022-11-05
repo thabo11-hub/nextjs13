@@ -18,9 +18,7 @@ async function TodoList() {
                 <p key={todo.id}>
                     <Link href={`/todos/${todo.id}`}>Todo: {todo.id}</Link>
                 </p>
-            ))
-
-            }
+            )) }
         </>
     )
 }
