@@ -16,7 +16,7 @@ const fetchTodo = async (todoId: string) => {
 async function TodoPage({ params: { todoId } }: PageProps) {
     const todo = await fetchTodo(todoId);
     return (
-        <div>
+        <div className='p-10 bg-yellow-200 border-2 m-2 shadow-lg'>
             <p>
                 #{todo.id}: {todo.title}
             </p>
